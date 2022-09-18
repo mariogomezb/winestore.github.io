@@ -11,8 +11,8 @@
 header{
     grid-area: header;
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-content: center;
 }
 
 .texto-menu{
@@ -69,7 +69,7 @@ footer{
     width: 100%;
 }
 .logo{
-    width:30%;
+    width:200px;
 }
 
 i{
@@ -87,11 +87,11 @@ i{
     .container-grid{
         display: grid;
         grid-template-areas:
-        "header header header header header"
-        "filtros filtros filtros filtros filtros  "
-        "productos productos productos productos productos  "
-        "pagina pagina pagina pagina pagina"
-        "footer footer footer footer footer";
+        "header header header header header "
+        "filtros filtros filtros filtros filtros "
+        "productos productos productos productos productos   "
+        "pagina pagina pagina pagina pagina "
+        "footer footer footer footer footer ";
         justify-content: center;
         align-content: center;
     }
@@ -103,6 +103,16 @@ i{
     }
     .producto{
         display: flex;
+    }
+
+    footer{
+        margin-top: 15px;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        background-color: brown !important;
+        padding-top: 20px;
+        width: 100vh;
     }
 }
 
@@ -119,6 +129,15 @@ i{
         align-content: center;
     }
 
+    header{
+        grid-area: header;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        height: 150px;
+        margin-top: 20px;
+    }
+
     .productos{
         grid-area: productos;
         display: grid;
@@ -127,6 +146,16 @@ i{
 
     .producto{
         display: flex;
+    }
+
+    footer{
+        margin-top: 15px;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        background-color: brown !important;
+        padding-top: 20px;
+        width: 100%;
     }
 }
 
